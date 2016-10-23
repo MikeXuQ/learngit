@@ -1,0 +1,343 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: auto 0px;
+    padding: auto 0px;
+    background-image: url('img/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+/*decorate the h1*/
+
+h1.name {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 160px;
+}
+
+/*build the game's interfere*/
+
+.mainbody {
+    position: relative;
+    top: 180px;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    background-color: #E3E3E3;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+/*build the display of the time and steps*/
+
+span {
+    font-size: 25px;
+}
+
+.display {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+.time {
+    font-size: 25px;
+    width: 50px;
+    margin-right: 55px;
+}
+
+.steps {
+    font-size: 25px;
+    width: 50px;
+}
+
+/*show the original pictures under at the bottom*/
+
+.show {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+    bottom: 45px;
+    left: 100px;
+    border-radius: 5px;
+}
+
+/*the three kinds of pictures as the original pictures*/
+
+.a {
+    background-image: url('img/panda.jpg');
+    background-size: 200px 200px;
+}
+
+.b {
+    background-image: url('img/xingji.jpg');
+    background-size: 200px 200px;
+}
+
+.c {
+    background-image: url('img/xibu.jpg');
+    background-size: 200px 200px;
+}
+
+/*set the location of the blocks;*/
+
+.game {
+    position: relative;
+    left: 35px;
+    top: 60px;
+    width: 500px;
+    height: 500px;
+}
+
+/*decorate all of the blocks*/
+
+.block {
+    position: absolute;
+    bottom: 0px;
+    width: 81.25px;
+    height: 81.25px;
+    border: 1px solid gray;
+    display: inline-block;
+    background-size: 333px 333px;
+    transition: all 0.5s;
+}
+
+.block:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/*three kinds of pictures as background-img*/
+
+.b0 {
+    background-image: url('img/panda.jpg');
+}
+
+.b1 {
+    background-image: url('img/xingji.jpg');
+}
+
+.b2 {
+    background-image: url('img/xibu.jpg');
+}
+
+/*the white block's decoration*/
+
+.white {
+    position: absolute;
+    bottom: 0px;
+    width: 81.25px;
+    height: 81.25px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+/*set the location of the three buttons*/
+
+.button {
+    position: relative;
+    bottom: 75px;
+    left: 15px;
+}
+
+/*button of start*/
+
+.start {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    box-shadow: 5px 5px 5px #949496;
+}
+
+/*button of testore */
+
+.reverse {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    background-color: #4385F6;
+    box-shadow: 5px 5px 5px #949496;
+}
+
+/*button of change the picture*/
+
+.change {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    box-shadow: 5px 5px 5px #949496;
+}
+
+/*the decoration before click the start*/
+
+.cl0 {
+    background-color: #4385F6;
+    transition: all 0.5s;
+}
+
+/*the decoration after click the start*/
+
+.cl1 {
+    background-color: gray;
+    transition: all 0.5s;
+}
+
+/*I name the different blocks by row and column*/
+
+/*15 blocks' background-position*/
+
+.a00 {
+    background-position: 0% 0%;
+}
+
+.a01 {
+    background-position: 33% 0%;
+}
+
+.a02 {
+    background-position: 66% 0%;
+}
+
+.a03 {
+    background-position: 99% 0%;
+}
+
+.a10 {
+    background-position: 0% 33%;
+}
+
+.a11 {
+    background-position: 33% 33%;
+}
+
+.a12 {
+    background-position: 66% 33%;
+}
+
+.a13 {
+    background-position: 99% 33%;
+}
+
+
+.a20 {
+    background-position: 0% 66%;
+}
+
+.a21 {
+    background-position: 33% 66%;
+}
+
+.a22 {
+    background-position: 66% 66%;
+}
+
+.a23 {
+    background-position: 99% 66%;
+}
+
+.a30 {
+    background-position: 0% 99%;
+}
+
+.a31 {
+    background-position: 33% 99%;
+}
+
+.a32 {
+    background-position: 66% 99%;
+}
+
+/*16 blocks' absolute position*/
+
+.p00 {
+    left: 0px;
+    top: 10px;
+}
+
+.p01 {
+    left: 83.25px;
+    top: 10px;
+}
+
+.p02 {
+    left: 166.5px;
+    top: 10px;
+}
+
+.p03 {
+    left: 249.75px;
+    top: 10px;
+}
+
+.p10 {
+    left: 0px;
+    top: 93.25px;
+}
+
+.p11 {
+    left: 83.25px;
+    top: 93.25px;
+}
+
+.p12 {
+    left: 166.5px;
+    top: 93.25px;
+}
+
+.p13 {
+    left: 249.75px;
+    top: 93.25px;
+}
+
+.p20 {
+    left: 0px;
+    top: 176.5px;
+}
+
+.p21 {
+    left: 83.25px;
+    top: 176.5px;
+}
+
+.p22 {
+    left: 166.5px;
+    top: 176.5px;
+}
+
+.p23 {
+    left: 249.75px;
+    top: 176.5px;
+}
+
+.p30 {
+    left: 0px;
+    top: 259.75px;
+}
+
+.p31 {
+    left: 83.25px;
+    top: 259.75px;
+}
+
+.p32 {
+    left: 166.5px;
+    top: 259.75px;
+}
+
+.p33 {
+    left: 249.75px;
+    top: 259.75px;
+}
