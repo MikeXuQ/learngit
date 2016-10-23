@@ -1,0 +1,22 @@
+h1, h2, h3 {
+    color: black;
+    font-family: Century Gothic, Futura, Verdana, sans-serif, Serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2, h3 {
+    font-size: 25px;
+}
+
+p {
+    color: black;
+    font-family: Century Gothic, Futura, Verdana, sans-serif, Serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(http://img.taopic.com/uploads/allimg/130509/234919-13050ZT20013.jpg);
+}

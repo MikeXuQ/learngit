@@ -1,0 +1,86 @@
+body {
+    width: 780px;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    font-family: Arial;
+}
+
+#instructions {
+    text-align: left;
+}
+
+#switch {
+    margin-right: 54px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border-color: #D2D2D2;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+#time {
+    width: 35px;
+    background-color: #FFFFFF;
+    border-color: #D2D2D2;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+#condition {
+    width: 140px;
+    margin-right: 60px;
+    background-color: #FFFFFF;
+    border-color: #D2D2D2;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+#score {
+    width: 35px;
+    background-color: #FFFFFF;
+    border-color: #D2D2D2;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+#display {
+    width: 260px;
+    margin: auto;
+    margin-top: 35px;
+    border-style: solid none solid none;
+    border-width: 1px;
+    border-color: #D2D2D2;
+}
+
+.hole {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border-color: #E8E8E8;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    left: -5px;
+    outline: none;
+}
+
+.change {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border-color: #E8E8E8;
+    background-color: white;
+    border-width: 1px;
+    box-shadow: inset 0px 0px 8px 4px blue;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    outline: none;
+    left: -5px;
+}

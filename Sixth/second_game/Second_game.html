@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Playing hamster</title>
+    <link rel="stylesheet" type="text/css" href="Second_style.css">
+    <script type="text/javascript" src="Second_game.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Whac-a-mole</h1>
+        <div id="rule">
+            <p>Test you skill. How many boxes(moles) can you check(hit) in 30 seconds?</p>
+        </div>
+        <div id="game">
+            <div id="interface">
+                <div id="upper">
+                    <button id="switch">Start Game|Stop Game</button>
+                    <span id="Time">Time: <input id="time" disabled="disabled"></span>
+                </div>
+                <div id="down">
+                    <input id="condition" disabled="disabled">
+                    <span>Score: <input id="score" disabled="disabled"></span>
+                </div>
+            </div>
+            <div id="game_interface">
+                <div id="display">
+                </div>
+            </div>
+        </div>
+        <div id="instructions">
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>Click on the radio buttons(moles) as they are selected randomly by the computer.</li>
+                <li>1 point per hit, minues 1 point per miss.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

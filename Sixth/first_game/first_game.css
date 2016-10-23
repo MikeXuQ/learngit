@@ -1,0 +1,234 @@
+body, html {
+    width: 950px;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+p {
+    font-size: 25px;
+}
+
+/*draw the border of the maze*/
+.walls {
+    background-color: #EEEEEE;
+}
+
+#wall_1 {
+    border-top-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#wall_8 {
+    border-bottom-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#wall_3, #wall_4 {
+    border-right-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#wall_2, #wall_6 {
+    border-left-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#wall_6 {
+    margin-top: -1px;
+}
+
+/*set the block of game*/
+
+#game {
+    width: 510px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+}
+
+
+/*draw the maze by floor*/
+
+/*first floor*/
+
+#wall_1, #wall_8 {
+    width: 504px;
+    height: 50px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+/*fifith_floor*/
+
+#wall_8 {
+    width: 505px;
+    height: 50px;
+    margin-top: 2px;
+}
+
+/*second_floor*/
+
+#second_floor {
+    width: 507px;
+    height: 50px;
+}
+
+#path_3 {
+    width: 200px;
+    height: 50px;
+    float: left;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#wall_3 {
+    width: 150px;
+    height: 50px;
+    float: left;
+}
+
+#wall_2 {
+    width: 152px;
+    height: 50px;
+    float: left;
+}
+
+/*third_floor*/
+
+#third_floor {
+    width: 506px;
+    height: 100px;
+}
+
+#path_2, #path_4 {
+    width: 50px;
+    height: 100px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: black;
+    border-width: 1px;
+    float: right;
+}
+
+
+#wall_4, #wall_6 {
+    width: 152px;
+    height: 100px;
+    float: right;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-width: 1px;
+}
+
+#wall_4 {
+    width: 150px;
+}
+
+#wall_5 {
+    width: 98px;
+    height: 100px;
+    border-top-style: solid;
+    border-color: black;
+    border-width: 1px;
+    float: right;
+}
+
+/*forth_floor*/
+
+#forth_floor {
+    width: 508px;
+    height: 50px;
+}
+
+#path_5, #path_1 {
+    width: 204px;
+    height: 50px;
+    border-bottom-style: solid;
+    border-color: black;
+    border-width: 1px;
+    float: left;
+}
+
+#wall_7 {
+    width: 98px;
+    height: 51px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: black;
+    border-width: 1px;
+    float: left;
+    margin-top: -1px;
+}
+
+/*start and end of block*/
+
+#start, #end {
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 4px;
+    background-color: #84FF82;
+}
+
+#end {
+    float: right;
+    background-color: #8685FC;
+}
+
+.block {
+    position: relative;
+    top: 12px;
+}
+
+#display_wall {
+    width: 100px;
+    height: 25px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: #EEEEEE;
+}
+
+/*When playing games,  after touch the walls, touch the wall.*/
+
+.wrong {
+    background-color: red;
+}
+
+#door {
+    height: 100px;
+    width: 5px;
+    position: relative;
+    top: 270px;
+    /*border: 1px solid black;*/
+    left: -3px;
+}
+
+#rule {
+    width: 600px;
+    margin: auto;
+    font-size: 18px;
+}
+
+#rule > p {
+    text-align: left;
+}
+
+#end > p, #start > p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -5px;
+}

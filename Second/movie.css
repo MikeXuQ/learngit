@@ -1,0 +1,165 @@
+body {
+    background-image: url("img/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 0;
+    margin: auto 0;
+}
+
+h1.topHead {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+/*the block under h1*/
+div.mainbody {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: gray;
+    border-width: 4px;
+    border-style: solid;
+}
+
+/*mainbody's head*/
+div.banner {
+    background-image: url(img/bannerbackground.png);
+    text-align: center;
+    background-repeat: repeat-x;
+}
+
+/*the right block in the mainbody*/
+div.generaloverview {
+    width: 250px;
+    float: right;
+    background-color: #A2B964;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+div.generaloverview > dl {
+    padding: 10px;
+    margin: 0;
+}
+
+div.generaloverview > dl > dt {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+div.generaloverview > dl > dd {
+    margin-bottom: 1em;
+}
+
+/*the left block which has two rows*/
+div.content {
+    width: 550px;
+}
+
+div.rotten {
+    background-image: url(img/rottenbackground.png);
+    height: 83px;
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+}
+
+div.rotten > img.img_rotten {
+    height: 83px;
+}
+
+div.rotten > span.percent {
+    vertical-align: top;
+    font-weight: bold;
+}
+
+div.rotten > span.number {
+    color: white;
+    font-size: 8pt;
+    vertical-align: middle;
+}
+
+/*the right row*/
+div.row2 {
+    width: 47%;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: right;
+}
+
+div.row2 > div {
+    margin-bottom: 3em;
+}
+
+div.row2 > div > p > q {
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+div.row2 > div > p > img {
+    vertical-align: text-top;
+    margin-right: 5px;
+    float: left;
+}
+
+/*the left row*/
+div.row1 > div {
+    margin-bottom: 3em;
+}
+
+div.row1 {
+    width: 47%;
+    margin-left: 2%;
+    margin-bottom: 3em;
+    float: left;
+}
+
+div.row1 > div > p > q {
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+
+div.row1 > div > p > img {
+    vertical-align: text-top;
+    margin-right: 5px;
+    float: left;
+}
+
+p.comment {
+    background-color: #E1D697;
+    border-style: solid;
+    border-color: gray;
+    border-width: 2px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+div > p > img.critic {
+    float: left;
+    margin-right: 5px;
+}
+
+p.name {
+    font-style: italic;
+}
+
+/*tag in the bottom*/
+div.bar > p {
+    clear: right;
+    background-color: #A2B964;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+/*the fixed tag*/
+.w3c {
+    position:fixed;
+    right:0;
+    bottom:0;
+}
