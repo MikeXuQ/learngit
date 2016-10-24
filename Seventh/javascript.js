@@ -148,7 +148,7 @@ function initial() {
         time_[0].value = 0;
         _global.start = 0;
         _global.timeId = 0;
-        _global.time_ = 0;
+        _global._time = 0;
         _global.steps = 0;
         var step = document.getElementsByClassName('steps');
         step[0].value = _global.steps;
