@@ -1,0 +1,42 @@
+body {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+thead > tr {
+    background-color: #041A7F;
+    color: white;
+    text-align: left;
+}
+
+thead > tr > th {
+    padding: 5px;
+    padding-right: 20px;
+    border: 1px solid #BFBFBF;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid #BFBFBF;
+}
+
+.even {
+    background-color: #DDDDDD;
+}
+
+.sort {
+    background-repeat: no-repeat;
+    background-position: 135px 5px;
+    background-color: #A7AEFC;
+}
+
+.up {
+    background-image: url("ascend.png");
+}
+
+.down {
+    background-image: url("descend.png");
+}
