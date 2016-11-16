@@ -1,0 +1,92 @@
+/*web页面的基础布局*/
+
+body, html {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 25px;
+}
+
+body {
+    height: 671px;
+    background-image: url("bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*为登录界面定位，调整各个部分之间的样式*/
+
+.button {
+    margin-left: 160px;
+}
+
+.submit {
+    margin-left: 10px;
+}
+
+.span {
+    margin-left: 15px;
+    margin-right: 30px;
+
+}
+
+.Username {
+    margin-left: 21px;
+}
+
+.block {
+    margin-bottom: 15px;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+form > div {
+    position: relative;
+    left: 100px;
+}
+
+.main {
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+/*设置表单样式*/
+
+.Form {
+    border: 1px solid black;
+    height: 360px;
+    background-color: #E3E3E3;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.input {
+    height: 25px;
+    font-family: 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 20px;
+}
+
+/*给错误提示增加样式*/
+
+.hint {
+    color: red;
+    font-size: 10px;
+}
+
+/*调整按钮的样式*/
+
+.Button {
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    box-shadow: 5px 5px 5px #949496;
+    background-color: #4385F6;
+    font-family: 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
